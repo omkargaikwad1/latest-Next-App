@@ -7,7 +7,7 @@ export default function Signin({
   }) {
     return (
 
-        <div className=' flex items-center justify-center  min-h-screen '>
+        <div className=' flex items-center justify-center min-h-screen '>
             <div className=' w-1/4 '>
             <form className="max-w-sm mx-auto">
                 <div className="mb-5">
