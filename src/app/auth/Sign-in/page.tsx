@@ -1,10 +1,6 @@
 import React from 'react'
 
-export default function Signin({
-    children,
-  }: {
-    children: React.ReactNode
-  }) {
+export default function Signin() {
     return (
 
         <div className=' flex items-center justify-center min-h-screen '>
