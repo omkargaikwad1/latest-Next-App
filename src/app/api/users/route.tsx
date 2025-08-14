@@ -24,7 +24,8 @@ const userSchema = new mongoose.Schema({
       await dbConnect(); // Connect to DB only if not connected
       const users = await User.find({});
       return Response.json({ success: true, data: users });
-    } catch (error :any) {
-      return Response.json({ success: false, error: error.message }, { status: 500 });
+    } catch (error: unknown) {
+      const message = error instanceof Error ? error.message : 'Unknown error';
+      return Response.json({ success: false, error: message }, { status: 500 });
     }
   }
